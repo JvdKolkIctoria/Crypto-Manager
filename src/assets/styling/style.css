@@ -1,0 +1,136 @@
+html, body{
+    height: 100%;
+  margin: 0;
+}
+p, h2{
+    margin: 0;
+}
+.headerContainer{
+    background-color: #2E2E2E;
+}
+.headerContainer ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+}   
+#root{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.dashboardContainer{
+    display: flex;
+    overflow-y: hidden;
+    justify-content: space-around;
+}
+.CoinItemRank{
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border-radius: 50%; /* This makes it a circle */
+    text-align: center;
+    color: white;
+}
+.coinContainer{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.coinGridContainerFavorites{
+    margin-left: 10px;
+    width: inherit;
+    overflow-y: scroll; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.coinGridContainerFavorites article:nth-child(odd) .CoinItemRank {
+    background-color: #36BDC9;
+}
+
+.coinGridContainerFavorites article:nth-child(even) .CoinItemRank {
+    background-color: #7E69E9;
+}
+.coinGridContainer article:nth-child(odd) .CoinItemRank {
+    background-color: #36BDC9;
+}
+
+.coinGridContainer article:nth-child(even) .CoinItemRank {
+    background-color: #7E69E9;
+}
+
+.coinItemsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.coinGridContainer{
+    margin-left: 10px;
+    width: inherit;
+    overflow-y: scroll; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: inherit;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.CoinItemBlock{
+    display: flexbox;
+        flex-grow: 1;
+    background-color: #2E2E2E;    
+}
+.CoinItemBlock .CoinItemTekst{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+ .CoinItemTekst .CoinItemFavIcon{
+    display: flex;
+    align-self: flex-start;
+    margin-left: auto;
+    font-size: x-large
+}
+.CoinItemRank{
+    margin-right: 2%;
+}
+.CoinItemBlock .CoinItemPrice{
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+.CoinItemSymbol{
+    color: gray;
+    font-size: small;
+}
+.CoinItemName{
+    height: fit-content;
+}
+a{
+    color: white;   
+}
+a:hover , a:active{
+    color: gray;   
+}
+.centerDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dashboard .dashboardContainer .pieChartContainer{
+    display: flex;
+    width: inherit;
+}
